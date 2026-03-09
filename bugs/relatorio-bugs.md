@@ -12,9 +12,13 @@ Execução de script malicioso via campo "Nome do curso" (Stored XSS).
 **Passos para reproduzir:**
 
 1. Acessar a página de cadastro de curso.
-2. Inserir o payload <img src="x" onerror="alert('Bug!')"> no campo **Nome do curso**.
-3. Preencher os demais campos e clicar em **Cadastrar curso**.
-4. Acessar a página **Lista de cursos**.
+2. Inserir o payload no campo **Nome do curso**.
+   **Payload utilizado no teste:**
+   ```
+   <img src="x" onerror="alert('Bug!')">
+   ```
+4. Preencher os demais campos e clicar em **Cadastrar curso**.
+5. Acessar a página **Lista de cursos**.
 
 **Resultado atual:**  
 O sistema salva a entrada sem nenhum tratamento ou sanitização. Ao renderizar a listagem, o navegador interpreta a tag e executa o script JavaScript injetado.
@@ -81,9 +85,11 @@ Aceitação de payload embutido (Data URI/SVG) no campo de imagem.
 1. Acessar a página de cadastro.
 2. Inserir o payload no campo **URL da imagem**.
    **Payload utilizado no teste:**
+   
    ```
    data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><script>alert('Bomba SVG!')</script><text x="20" y="20">Imagem Infectada</text></svg>
    ```
+   
 4. Preencher os demais campos e clicar em **Cadastrar curso**.
 5. Acessar a página **Lista de cursos**.
 
