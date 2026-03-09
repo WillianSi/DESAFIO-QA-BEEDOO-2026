@@ -128,3 +128,29 @@ Foram considerados os seguintes tipos de testes:
 - **Testes de usabilidade:** análise da clareza da interface, facilidade de navegação entre as páginas e feedback visual apresentado ao usuário.
 
 - **Testes de comportamento inesperado:** avaliação de como o sistema se comporta em situações não previstas, como inserção de valores extremos, dados inconsistentes ou entradas incomuns.
+
+---
+
+## 5. Casos de teste
+
+Os cenários e casos de teste foram documentados na planilha:
+
+Link da planilha:
+https://docs.google.com/spreadsheets/d/1IQFzcgcPo8kF9CVAsVv4ItPC3KuPL50wuH7m6_vxldA/edit?usp=sharing
+
+---
+
+## 6. Evidências de testes
+
+As evidências da execução dos testes estão disponíveis no link:
+
+(INSERIR LINK DO GOOGLE DRIVE)
+
+---
+
+## 7. Relatório de bugs
+
+Os bugs encontrados estão documentados abaixo:
+
+(ou link para documento)
+
