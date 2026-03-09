@@ -79,9 +79,13 @@ Aceitação de payload embutido (Data URI/SVG) no campo de imagem.
 **Passos para reproduzir:**
 
 1. Acessar a página de cadastro.
-2. Inserir o payload data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><script>alert('Bomba SVG!')</script><text x="20" y="20">Imagem Infectada</text></svg> no campo **URL da imagem**.
-3. Preencher os demais campos e clicar em **Cadastrar curso**.
-4. Acessar a página **Lista de cursos**.
+2. Inserir o payload no campo **URL da imagem**.
+   **Payload utilizado no teste:**
+   ```
+   data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><script>alert('Bomba SVG!')</script><text x="20" y="20">Imagem Infectada</text></svg>
+   ```
+4. Preencher os demais campos e clicar em **Cadastrar curso**.
+5. Acessar a página **Lista de cursos**.
 
 **Resultado atual:**  
 O sistema não valida se o texto é um link válido (HTTP/HTTPS). Ele aceita a injeção do Data URI e renderiza a imagem SVG forjada no card.
