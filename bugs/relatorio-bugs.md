@@ -14,9 +14,11 @@ Execução de script malicioso via campo "Nome do curso" (Stored XSS).
 1. Acessar a página de cadastro de curso.
 2. Inserir o payload no campo **Nome do curso**.
    **Payload utilizado no teste:**
+   
    ```
    <img src="x" onerror="alert('Bug!')">
    ```
+   
 4. Preencher os demais campos e clicar em **Cadastrar curso**.
 5. Acessar a página **Lista de cursos**.
 
