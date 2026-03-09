@@ -152,5 +152,5 @@ https://drive.google.com/drive/folders/14IFNZ_mZEhxwRH4oFnnaEQYZ7341evR4?usp=sha
 
 Os bugs encontrados estão documentados abaixo:
 
-(ou link para documento)
+[Relatório de Bugs](bugs/relatorio-bugs.md)
 
