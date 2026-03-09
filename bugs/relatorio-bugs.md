@@ -15,9 +15,9 @@ Execução de script malicioso via campo "Nome do curso" (Stored XSS).
 2. Inserir o payload no campo **Nome do curso**.
    **Payload utilizado no teste:**
    
-   ```
+    ```
    <img src="x" onerror="alert('Bug!')">
-   ```
+    ```
    
 4. Preencher os demais campos e clicar em **Cadastrar curso**.
 5. Acessar a página **Lista de cursos**.
@@ -88,9 +88,9 @@ Aceitação de payload embutido (Data URI/SVG) no campo de imagem.
 2. Inserir o payload no campo **URL da imagem**.
    **Payload utilizado no teste:**
    
-   ```
+    ```
    data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><script>alert('Bomba SVG!')</script><text x="20" y="20">Imagem Infectada</text></svg>
-   ```
+    ```
    
 4. Preencher os demais campos e clicar em **Cadastrar curso**.
 5. Acessar a página **Lista de cursos**.
