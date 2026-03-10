@@ -154,3 +154,7 @@ Os bugs encontrados estão documentados abaixo:
 
 [Relatório de Bugs](bugs/relatorio-bugs.md)
 
+ou
+
+https://docs.google.com/document/d/1-AIL_eS4InIcYlJKGBeYjhWdMKLjzimSONAPG3mOiLs/edit?usp=sharing
+
